@@ -17,7 +17,14 @@ describe('isNumberEven test', () => {
 
 
 describe('addNumbers test', () => {
-    it('should throw error if number is not passed', () => {
+    it('should throw error if numbers are not passed', () => {
+        try {
+            addNumbers(3);
+        } catch (err) {
+            expect(err.message).to.equals('Enter valid number');
+        }
+    })
+    it('should throw error if string is passed', () => {
         try {
             addNumbers('d', 3)
         } catch (err) {
