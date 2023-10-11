@@ -1,7 +1,7 @@
 const chai = require('chai');
 const rewire = require("rewire");
 
-const isNumberEven = rewire('./index.js');
+const { isNumberEven, addNumbers } = rewire('./index.js');
 
 const expect = chai.expect;
 
@@ -13,4 +13,11 @@ describe('isNumberEven test', () => {
     it('Should return true when even no is passed', () => {
         expect(isNumberEven(2)).to.equals(true);
     });
+})
+
+
+describe('addNumbers test', () => {
+    it('Should return sum of numbers', () => {
+        expect(addNumbers(11, 7)).to.equals(18);
+    })
 })

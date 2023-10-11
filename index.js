@@ -1,4 +1,4 @@
-function isNumberEven (num) {
+function isNumberEven(num) {
     if (num % 2 === 0) {
         return true
     }
@@ -6,5 +6,8 @@ function isNumberEven (num) {
     return false;
 };
 
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
 
-module.exports = isNumberEven;
+module.exports = { isNumberEven, addNumbers };
