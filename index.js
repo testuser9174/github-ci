@@ -1,5 +1,5 @@
 function isNumberEven (num) {
-    if (num % 2 === 0) {
+    if (num % 2 !== 0) {
         return true
     }
 
