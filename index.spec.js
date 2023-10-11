@@ -21,7 +21,7 @@ describe('addNumbers test', () => {
         try {
             addNumbers(3);
         } catch (err) {
-            expect(err.message).to.equals('Enter valid number');
+            expect(err.message).to.equals('Enter the numbers to add');
         }
     })
     it('should throw error if string is passed', () => {
