@@ -17,6 +17,13 @@ describe('isNumberEven test', () => {
 
 
 describe('addNumbers test', () => {
+    it('should throw error if number is not passed', () => {
+        try {
+            addNumbers('d', 3)
+        } catch (err) {
+            expect(err.message).to.equals('Enter valid number');
+        }
+    })
     it('Should return sum of numbers', () => {
         expect(addNumbers(11, 7)).to.equals(18);
     })
